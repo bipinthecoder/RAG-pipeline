@@ -1,0 +1,1 @@
+document_directory_path = './Resources'
