@@ -9,8 +9,8 @@ model = TFBertModel.from_pretrained('bert-base-uncased') #Helps Extract contexua
 
 def clean_text(document_text):
     cleaned_text = document_text.lower() #For uniformity
-    cleaned_text = re.sub(r'\s+', ' ', document_text) #single space uniformity
-    cleaned_text = re.sub(r'[^\w\s£]', '', document_text) #Removing punctuation expect the '£' sign -> Required for the objective
+    cleaned_text = re.sub(r'\s+', ' ', cleaned_text) #single space uniformity
+    cleaned_text = re.sub(r'[^\w\s£]', '', cleaned_text) #Removing punctuation expect the '£' sign -> Required for the objective
     return cleaned_text
 
 
