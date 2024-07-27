@@ -19,7 +19,6 @@ document_embeddings = dp.embed_text_content(cleaned_documents)
 index = dp.get_index_for_text_embeddings(document_embeddings)
 
 #Handling text Generation using an LLM -> GPT-2
-
 model = 'openai-community/gpt2'
 gpt2_tokenizer = GPT2Tokenizer.from_pretrained(model)
 gpt2_model = TFGPT2LMHeadModel.from_pretrained(model)
